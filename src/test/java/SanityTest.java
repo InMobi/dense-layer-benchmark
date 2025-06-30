@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2025 InMobi
+ *
+ * This file is part of dense-layer-benchmark.
+ *
+ * Licensed under the MIT License. See LICENSE file in the project root for full license information.
+ */
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import benchmark.DenseLayerBenchmark;
 import org.junit.jupiter.api.Test;
