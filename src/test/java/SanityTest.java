@@ -16,7 +16,7 @@ public class SanityTest {
         float[] fma    = denseLayerBenchmark.vectorApiFmaDense(bh);
         float[] dl4j   = denseLayerBenchmark.dl4jDense(bh);
 
-        System.out.printf("%8s %12s %12s %12s %12s %12s%n", "Index", "Scalar", "EJML", "Vector", "FMA", "DL4J");
+        System.out.printf("%8s %12s %12s %12s %12s %12s%n", "Index", "Scalar", "EJML", "SIMD", "SIMD+FMA", "DL4J");
         for (int i = 0; i < scalar.length; i++) {
             System.out.printf("%8d %12.6f %12.6f %12.6f %12.6f %12.6f%n",
                 i, scalar[i], ejml[i], vector[i], fma[i], dl4j[i]);
